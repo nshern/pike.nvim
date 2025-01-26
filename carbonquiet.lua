@@ -57,7 +57,7 @@ end
 if vim.o.background == "light" then
 	vim.api.nvim_set_hl(0, "@variable", { link = Normal })
 	vim.api.nvim_set_hl(0, "ColorColumn", { bg = palette.gray_70 })
-	vim.api.nvim_set_hl(0, "Comment", { fg = palette.gray_70 })
+	vim.api.nvim_set_hl(0, "Comment", { fg = black, bold = true })
 	vim.api.nvim_set_hl(0, "Conceal", { bg = palette.gray_70 })
 	vim.api.nvim_set_hl(0, "Constant", {})
 	vim.api.nvim_set_hl(0, "CurSearch", { bg = palette.yellow_30, fg = palette.black })
