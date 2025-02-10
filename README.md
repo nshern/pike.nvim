@@ -1,4 +1,4 @@
-# Carbonquiet
+# Pike
 
 > When I was a child, I used to speak like a child, think like a child, reason like a child; when I became a man, I did away with childish things. <br> - [Rob Pike](https://groups.google.com/g/golang-nuts/c/hJHCAaiL0so/m/E2mQ1RDiio8J)
 
