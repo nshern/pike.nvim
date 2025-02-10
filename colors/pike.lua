@@ -5,7 +5,7 @@ end
 
 local palette = require("palette")
 
-vim.g.colors_name = "carbonquiet"
+vim.g.colors_name = "pike"
 
 if vim.o.background == "dark" then
 	vim.api.nvim_set_hl(0, "@variable", { link = Normal })
