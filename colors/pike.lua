@@ -23,7 +23,7 @@ local c = vim.o.background == "light"
 			fg_cursearch = p.black,
 			fg_statusline = p.warm_gray_70,
 			bg_statusline = p.warm_gray_10,
-			bg_tabline = p.white,
+			bg_cursorline = p.white,
 			fg_linenr = p.warm_gray_50,
 			fg_cursorlinenr = p.warm_gray_70,
 			fg_nontext = p.warm_gray_40,
@@ -66,7 +66,7 @@ local c = vim.o.background == "light"
 		fg_cursearch = p.black,
 		fg_statusline = p.warm_gray_30,
 		bg_statusline = p.warm_gray_100,
-		bg_tabline = p.black,
+		bg_cursorline = p.gray_100,
 		fg_linenr = p.warm_gray_60,
 		fg_cursorlinenr = p.warm_gray_70,
 		fg_nontext = p.warm_gray_70,
@@ -103,7 +103,7 @@ vim.api.nvim_set_hl(0, "Conceal", { bg = c.bg_select })
 vim.api.nvim_set_hl(0, "Constant", {})
 vim.api.nvim_set_hl(0, "CurSearch", { bg = c.bg_cursearch, fg = c.fg_cursearch })
 vim.api.nvim_set_hl(0, "CursorLineNr", { fg = c.fg_cursorlinenr })
-vim.api.nvim_set_hl(0, "Cursorline", { bg = c.bg_dim })
+vim.api.nvim_set_hl(0, "Cursorline", { bg = c.bg_cursorline })
 vim.api.nvim_set_hl(0, "Delimiter", { link = "Normal" })
 vim.api.nvim_set_hl(0, "DiagnosticError", { fg = c.fg_error })
 vim.api.nvim_set_hl(0, "DiagnosticHint", { fg = c.fg_hint })
@@ -210,7 +210,7 @@ vim.api.nvim_set_hl(0, "MiniFilesBorder", { link = "FloatBorder" })
 vim.api.nvim_set_hl(0, "MiniFilesBorderModified", { fg = c.fg_warn })
 vim.api.nvim_set_hl(0, "MiniFilesCursorLine", { link = "Cursorline" })
 vim.api.nvim_set_hl(0, "MiniFilesDirectory", { link = "Directory" })
-vim.api.nvim_set_hl(0, "MiniFilesFile", { link = "Normal" })
+vim.api.nvim_set_hl(0, "MiniFilesFile", { fg = c.fg })
 vim.api.nvim_set_hl(0, "MiniFilesNormal", { link = "NormalFloat" })
 vim.api.nvim_set_hl(0, "MiniFilesTitle", { link = "Title" })
 vim.api.nvim_set_hl(0, "MiniFilesTitleFocused", { link = "Title", bold = true })
@@ -261,7 +261,7 @@ vim.api.nvim_set_hl(0, "MiniPickBorderText", { link = "Title" })
 vim.api.nvim_set_hl(0, "MiniPickCursor", { blend = 100, nocombine = true })
 vim.api.nvim_set_hl(0, "MiniPickHeader", { link = "DiagnosticHint" })
 vim.api.nvim_set_hl(0, "MiniPickIconDirectory", { link = "Directory" })
-vim.api.nvim_set_hl(0, "MiniPickIconFile", { link = "Normal" })
+vim.api.nvim_set_hl(0, "MiniPickIconFile", { fg = c.fg })
 vim.api.nvim_set_hl(0, "MiniPickMatchCurrent", { link = "Cursorline" })
 vim.api.nvim_set_hl(0, "MiniPickMatchMarked", { link = "Visual" })
 vim.api.nvim_set_hl(0, "MiniPickMatchRanges", { fg = c.fg_match, bold = true })
@@ -306,20 +306,20 @@ vim.api.nvim_set_hl(0, "MiniStatuslineModeVisual", { fg = c.fg_statusline, bg = 
 vim.api.nvim_set_hl(0, "MiniSurround", { link = "IncSearch" })
 
 -- tabline (native)
-vim.api.nvim_set_hl(0, "TabLine", { fg = c.fg_statusline, bg = c.bg_tabline })
-vim.api.nvim_set_hl(0, "TabLineFill", { bg = c.bg_tabline })
+vim.api.nvim_set_hl(0, "TabLine", { fg = c.fg_statusline, bg = c.bg })
+vim.api.nvim_set_hl(0, "TabLineFill", { bg = c.bg })
 vim.api.nvim_set_hl(0, "TabLineSel", { fg = c.fg, bg = c.bg, bold = true })
 
 -- mini.tabline
 vim.api.nvim_set_hl(0, "MiniTablineCurrent", { fg = c.fg, bg = c.bg, bold = true })
-vim.api.nvim_set_hl(0, "MiniTablineFill", { bg = c.bg_tabline })
-vim.api.nvim_set_hl(0, "MiniTablineHidden", { fg = c.fg_linenr, bg = c.bg_tabline })
+vim.api.nvim_set_hl(0, "MiniTablineFill", { bg = c.bg })
+vim.api.nvim_set_hl(0, "MiniTablineHidden", { fg = c.fg_linenr, bg = c.bg })
 vim.api.nvim_set_hl(0, "MiniTablineModifiedCurrent", { fg = c.fg_search, bg = c.bg_search, bold = true })
 vim.api.nvim_set_hl(0, "MiniTablineModifiedHidden", { fg = c.fg_search, bg = c.bg_search })
 vim.api.nvim_set_hl(0, "MiniTablineModifiedVisible", { fg = c.fg_search, bg = c.bg_search })
-vim.api.nvim_set_hl(0, "MiniTablineTabpagesection", { fg = c.fg_statusline, bg = c.bg_tabline, bold = true })
-vim.api.nvim_set_hl(0, "MiniTablineTrunc", { fg = c.fg_warn, bg = c.bg_tabline })
-vim.api.nvim_set_hl(0, "MiniTablineVisible", { fg = c.fg_statusline, bg = c.bg_tabline })
+vim.api.nvim_set_hl(0, "MiniTablineTabpagesection", { fg = c.fg_statusline, bg = c.bg, bold = true })
+vim.api.nvim_set_hl(0, "MiniTablineTrunc", { fg = c.fg_warn, bg = c.bg })
+vim.api.nvim_set_hl(0, "MiniTablineVisible", { fg = c.fg_statusline, bg = c.bg })
 
 -- mini.test
 vim.api.nvim_set_hl(0, "MiniTestEmphasis", { bold = true })
