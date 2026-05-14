@@ -1,21 +1,21 @@
 # Pike light theme for Ghostty
 
 # Foreground and background
-foreground = 161616
-background = ffffff
+foreground = 171414
+background = e5e0df
 
 # Normal colors
-palette = 0=#161616
+palette = 0=#171414
 palette = 1=#da1e28
 palette = 2=#198038
 palette = 3=#8e6a00
 palette = 4=#0f62fe
 palette = 5=#8a3ffc
 palette = 6=#007d79
-palette = 7=#c6c6c6
+palette = 7=#cac5c4
 
 # Bright colors
-palette = 8=#525252
+palette = 8=#565151
 palette = 9=#a2191f
 palette = 10=#0e6027
 palette = 11=#684e00
