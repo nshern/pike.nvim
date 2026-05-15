@@ -28,7 +28,7 @@ local c = vim.o.background == "light"
 			fg_cursorlinenr = p.warm_gray_70,
 			fg_nontext = p.warm_gray_40,
 			fg_unnecessary = p.warm_gray_40,
-			fg_comment = p.warm_gray_60,
+			fg_comment = p.teal_70,
 			fg_error = p.red_60,
 			fg_warn = p.yellow_60,
 			fg_info = p.cyan_70,
@@ -66,12 +66,12 @@ local c = vim.o.background == "light"
 		fg_cursearch = p.black,
 		fg_statusline = p.warm_gray_30,
 		bg_statusline = p.warm_gray_100,
-		bg_cursorline = p.gray_100,
+		bg_cursorline = p.cool_gray_100,
 		fg_linenr = p.warm_gray_60,
 		fg_cursorlinenr = p.warm_gray_70,
 		fg_nontext = p.warm_gray_70,
 		fg_unnecessary = p.warm_gray_70,
-		fg_comment = p.warm_gray_60,
+		fg_comment = p.teal_60,
 		fg_error = p.red_40,
 		fg_warn = p.yellow_40,
 		fg_info = p.cyan_40,
@@ -98,7 +98,7 @@ local c = vim.o.background == "light"
 
 vim.api.nvim_set_hl(0, "@variable", { link = "Normal" })
 vim.api.nvim_set_hl(0, "ColorColumn", { bg = c.bg_float })
-vim.api.nvim_set_hl(0, "Comment", { fg = c.fg_comment, bold = true })
+vim.api.nvim_set_hl(0, "Comment", { fg = c.fg_comment })
 vim.api.nvim_set_hl(0, "Conceal", { bg = c.bg_select })
 vim.api.nvim_set_hl(0, "Constant", {})
 vim.api.nvim_set_hl(0, "CurSearch", { bg = c.bg_cursearch, fg = c.fg_cursearch })
