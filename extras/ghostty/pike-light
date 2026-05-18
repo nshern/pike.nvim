@@ -4,6 +4,10 @@
 foreground = 171414
 background = e5e0df
 
+# Cursor
+cursor-color = eb6200
+cursor-text = e5e0df
+
 # Normal colors
 palette = 0=#171414
 palette = 1=#da1e28

@@ -66,7 +66,7 @@ local c = vim.o.background == "light"
 		fg_cursearch = p.black,
 		fg_statusline = p.warm_gray_30,
 		bg_statusline = p.warm_gray_100,
-		bg_cursorline = p.cool_gray_100,
+		bg_cursorline = p.warm_gray_80,
 		fg_linenr = p.warm_gray_60,
 		fg_cursorlinenr = p.warm_gray_70,
 		fg_nontext = p.warm_gray_70,
@@ -141,7 +141,7 @@ vim.api.nvim_set_hl(0, "SpecialKey", { bg = c.bg_select })
 vim.api.nvim_set_hl(0, "Spellbad", { link = "DiagnosticUnderlineError" })
 vim.api.nvim_set_hl(0, "Statement", { fg = c.fg, bg = c.bg, bold = true })
 vim.api.nvim_set_hl(0, "Statusline", { fg = c.fg_statusline, bg = c.bg_statusline })
-vim.api.nvim_set_hl(0, "String", { link = "Normal" })
+vim.api.nvim_set_hl(0, "String", { fg = c.fg, italic = true })
 vim.api.nvim_set_hl(0, "Title", { bold = true })
 vim.api.nvim_set_hl(0, "Type", { link = "Normal" })
 vim.api.nvim_set_hl(0, "Visual", { bg = c.bg_visual })
