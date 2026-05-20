@@ -16,14 +16,14 @@ local c = vim.o.background == "light"
 			bg_float = p.warm_gray_20,
 			bg_pmenu = p.warm_gray_30,
 			bg_select = p.warm_gray_40,
-			bg_visual = p.blue_20,
+			bg_visual = p.blue_30,
 			bg_search = p.yellow_20,
 			fg_search = p.black,
 			bg_cursearch = p.yellow_30,
 			fg_cursearch = p.black,
 			fg_statusline = p.warm_gray_70,
 			bg_statusline = p.warm_gray_10,
-			bg_cursorline = p.white,
+			bg_cursorline = p.warm_gray_10,
 			fg_linenr = p.warm_gray_50,
 			fg_cursorlinenr = p.warm_gray_70,
 			fg_nontext = p.warm_gray_40,
@@ -142,6 +142,7 @@ vim.api.nvim_set_hl(0, "Spellbad", { link = "DiagnosticUnderlineError" })
 vim.api.nvim_set_hl(0, "Statement", { fg = c.fg, bg = c.bg, bold = true })
 vim.api.nvim_set_hl(0, "Statusline", { fg = c.fg_statusline, bg = c.bg_statusline })
 vim.api.nvim_set_hl(0, "String", { fg = c.fg, italic = true })
+-- vim.api.nvim_set_hl(0, "String", { fg = "#da1e28" })
 vim.api.nvim_set_hl(0, "Title", { bold = true })
 vim.api.nvim_set_hl(0, "Type", { link = "Normal" })
 vim.api.nvim_set_hl(0, "Visual", { bg = c.bg_visual })
