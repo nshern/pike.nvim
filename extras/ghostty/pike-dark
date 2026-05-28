@@ -2,10 +2,10 @@
 
 # Foreground and background
 foreground = cac5c4
-background = 171414
+background = 081a1c
 
 # Cursor
-cursor-color = cac5c4
+cursor-color = 42be65
 cursor-text = 171414
 
 # Normal colors
